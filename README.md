@@ -15,7 +15,7 @@ Setup:
 1. Connect the irrigation pump to the Hs100 plug, and connect the plug into the wall outlet.
 2. Connect the HS100 Plug to the Wi-Fi network on which your current device is using the Kasa app.
 3. Run Plugtest.py.
-4. Copy the IP Address of the plug to controls.py.
+4. Copy the IP Address of the plug to controls.py (line 25).
 5. Run bot.py.
 6. View the livestream on 0.0.0.0:5050/
 7. Run controls.py.
