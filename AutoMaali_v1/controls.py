@@ -22,7 +22,7 @@ def index():
 # Bot Controls
 @app.route('/camerac1', methods=['GET', 'POST'])
 def camerac1():
-    plug = SmartPlug("192.168.43.246")
+    plug = SmartPlug("Insert IP Address here")
     print("Current state: %s" % plug.state)
     if (plug.state == 'ON'):
         plug.turn_off()
