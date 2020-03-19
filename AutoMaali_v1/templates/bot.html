@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+	<title>Bot Cam</title>
+<script src="{{url_for('static',filename='jquery.js')}}"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='bs.css')}}"></link>
+    <script src="{{url_for('static', filename='bs.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='functions.js') }}"></script>
+</head>
+<body>
+	<div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 col-sm-12">
+                <center>
+                    <img id="bg" src="{{ url_for('video_feed') }}" width="100%" ></img>
+                    <b><p>{{text}}</p></b>
+                </center>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+	/*function feed() {
+        $.ajax({
+            url: '/feed',
+            data: $('form').serialize(),
+            type: 'POST',
+            success: function(response) {
+                //console.log(response);
+                //battery=response.substr(1,response.length-2);
+                //console.log(battery);
+                //battery="My battery level is at " +battery
+                document.getElementById("text").innerHTML =response;
+            },
+            error: function(error) {
+                console.log(error);
+            }
+        });
+    }*/
+    //window.setInterval(bg, 100);
+    function autoRefresh()
+    {
+        window.location = window.location.href;
+    }
+
+    //setInterval('autoRefresh()', 5000); // this will reload page after every 5 secounds; Method I
+</script>
